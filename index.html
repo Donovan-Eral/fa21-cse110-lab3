@@ -5,6 +5,7 @@
         <meta name="description" content="meeting information and notes">
         <meta charset="UTF-8">
         <link rel="icon" type="image/png" href="http://simpleicon.com/wp-content/uploads/note.png">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -20,10 +21,9 @@
                 </ul>
             </nav>
         </header>
-        <hr>
         <main>
             <h1>Meeting Minutes</h1>
-            <img src="parasitejpg" alt="parasite" width="100">
+            <img src="rickmorty.jpg" alt="parasite">
             <h2>Memory Parasite : August 16, 2015</h2>
             <section id="attendance">
                 <h3>Attendance</h3>
@@ -53,6 +53,7 @@
             </section>
             <section id="notes">
                 <h3>Notes</h3>
+                <img src="parasitejpg" alt="parasite" class="parasite">
                 <details>
                     <summary>Memory Parasites</summary>
                     <br>
@@ -87,10 +88,44 @@
                 </audio>
                 <br>
                 <br>
-                <video controls width="500">
+                <video controls>
                     <source src="file_example_MP4_640_3MG.mp4">
                     
                 </video>
+            </section>
+            <section id="main_container">
+                <section id="container1">
+                    <h4>Rick Sanchez</h4>
+                </section>
+                <section id="container2">
+                    <h4>Beth Smith</h4>
+                </section>
+                <section id="container3">
+                    <h4>Jerry Smith</h4>
+                </section>
+                <section id="container4">
+                    <h4>Morty Smith</h4>
+                </section>
+                <section id="container5">
+                    <h4>Summer Smith</h4>
+                </section>
+                <section id="container6">
+                    <h4>Mr. Poopybutthole</h4>
+                </section>
+            </section>
+            <section class="grid_main_container">
+                <section class="grid_container1">
+                    <h4>Rick Sanchez</h4>
+                </section>
+                <section class="grid_container2">
+                    <h4>Beth Smith</h4>
+                </section>
+                <section class="grid_container3">
+                    <h4>Jerry Smith</h4>
+                </section>
+                <section class="grid_container4">
+                    <h4>Morty Smith</h4>
+                </section>
             </section>
             <section id="form">
                 <h3>Form</h3>
@@ -145,7 +180,7 @@
                         <label>Explain your reason</label>
                         <br>
                         <br>
-                        <textarea id="reason" name="reason" rows="10" cols="50"></textarea>
+                        <textarea id="reason" name="reason"></textarea>
                         <br>
                         <br>
                         <button type="button">Submit</button>
