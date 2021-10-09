@@ -1,3 +1,5 @@
+/* Here is the CSS for the meeting minutes */
+
 html {
     margin-top: 2cm;
     margin-bottom: 2cm;
@@ -5,11 +7,21 @@ html {
     margin-right: 2cm;
     background-color: rgb(38,56,47);
     font-family: 'Poppins', sans-serif;
+}
+
+* {
+    color: honeydew;
     font-size: 1.2rem;
 }
 
+@media (max-width: 20cm) {
+    * {
+        font-size: 1rem;
+    }
+}
+
 body {
-    color: honeydew;
+    margin: auto;
 }
 
 img, video {
@@ -18,11 +30,21 @@ img, video {
     border-width: 5px;
     border-radius: 0.25pc;
     width: 60vw;
+    max-width: 25cm;
+    min-width: 5cm;
+    margin: 1cm 1cm 1cm 1cm;
+}
+
+audio {
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 1cm;
+    padding-bottom: 0cm;
 }
 
 textarea {
     width: 50vw;
-    height: 20vh
+    height: 20vh;
 }
 
 ul {
@@ -45,6 +67,111 @@ li a:hover {
     background-color: rgba(3,176,203,255)
 }
 
-a:active {
+li a:active {
     background-color: hsl(1, 38%, 50%);
+}
+
+fieldset {
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+img.parasite {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #376070;
+}
+
+h1 {
+    position: static;
+}
+
+#main_container {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#container1 {
+    order: 1;
+    flex: 1 100%;
+}
+
+#container2 {
+    order: 2;
+    flex: 1 100%;
+}
+
+#container3 {
+    order: 3;
+    flex: 1 100%;
+}
+
+#container4 {
+    order: 4;
+    flex: 1 100%;
+}
+
+#container5 {
+    order: 5;
+    flex: 1 100%;
+}
+
+#container6 {
+    order: 6;
+    flex: 1 100%;
+}
+
+#container1,
+#container2,
+#container3,
+#container4,
+#container5,
+#container6{
+    background-color: #1a2d19;
+    text-align: center;
+    border-radius: 0.25pc;
+}
+
+.grid_main_container {
+    margin-top: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
+
+.grid_container1 {
+    grid-area: header;
+}
+
+.grid_container2 {
+    grid-area: main;
+}
+
+.grid_container3 {
+    grid-area: sidebar;
+}
+
+.grid_container4 {
+    grid-area: footer;
+}
+
+.grid_container1,
+.grid_container2,
+.grid_container3,
+.grid_container4{
+    background-color: #1a2d19;
+    text-align: center;
+    border-radius: 0.25pc;
 }
