@@ -42,9 +42,22 @@ audio {
     padding-bottom: 0cm;
 }
 
-textarea {
+fieldset > textarea {
     width: 50vw;
     height: 20vh;
+    color: black;
+}
+
+datalist {
+    color: black;
+}
+
+summary ~ p {
+    color: #c1f986    ;
+}
+
+audio + p {
+    font-style: italic;
 }
 
 ul {
@@ -174,4 +187,8 @@ h1 {
     background-color: #1a2d19;
     text-align: center;
     border-radius: 0.25pc;
+}
+
+[type="button"] {
+    color: black;
 }
